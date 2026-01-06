@@ -1,118 +1,45 @@
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Gaming Zone</title>
+    <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
+    <link rel="stylesheet" href="location.css">
+</head>
 
-.logo{
-    color: black;
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-}
+<body style="background-color: grey;">
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Bootcamp</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="finalproject.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="contact.html">CONTACT </a></li>
+            </ul>
+        </div>
 
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type here">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
+    </div>
 
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 20px;
-}
+    <h3>Our location:</address>
+    </h3>
 
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    transition: 0,4s ease-in-out;
-}
+    <ol>
+        <li><a href="https://maps.app.goo.gl/rcxHeV8BKiTEa9F7A">Rr. Ahmet Selaci, Mitrovica Kosovo</a></li>
+    </ol>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d730.8831706491176!2d20.8668575!3d42.8827068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135345118f69725d%3A0xe80125b49470fe3e!2sAhmet%20Selaci%2C%20Mitrovic%C3%AB!5e0!3m2!1sen!2s!4v1727979737689!5m2!1sen!2s"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
 
-ul li a:hover{
-    color:white;
-}
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid black;
-    margin-top: 13px;
-    color: beige;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn{
-    width: 100px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid black;
-    margin-top: 13px;
-    color: white;
-    font-size: 16px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.btn:focus{
-    outline: none;
-}
-
-.srch:focus{
-    outline: none;
-}
-
-h3{
-    color: black;
-    font-family: 'Times New Roman';
-    text-align: left;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-ol li{
-    list-style: circle;
-    font-size: 20px;
-}
-
-ol li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    transition: 0,4s ease-in-out;
-}
-
-ol li a:hover{
-    color:white;
-}
+</html>
