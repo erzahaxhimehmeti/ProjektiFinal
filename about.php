@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Gaming Zone</title>
+    <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body style="background-color:grey;">
+    <div class="main">
+        
+        <div class="navbar"></div>
+            <div class="icon">
+                <h2 class="logo">Bootcamp</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="finalproject.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT </a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type here">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+    
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/AgeOfEmpiresLogo.png">
+                <img src="bootcamp games-logo/AgeOfEmpiresLogo.png" alt="age of empires" width="200px">
+            </a>
+            <div class="description">Age of empires</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/ApexLegendsLogo.png">
+                <img src="bootcamp games-logo/ApexLegendsLogo.png" alt="apex legends" width="200px">
+            </a>
+            <div class="description">Apex Legends</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/CounterStrike2Logo.png">
+                <img src="bootcamp games-logo/CounterStrike2Logo.png" alt="counter strike 2" width="200px">
+            </a>
+            <div class="description">Counter Strike 2</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/Dota2Logo.png">
+                <img src="bootcamp games-logo/Dota2Logo.png" alt="dota 2" width="200px">
+            </a>
+            <div class="description">Dota 2</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/FortniteLogo.jfif">
+                <img src="bootcamp games-logo/FortniteLogo.jfif" alt="fortnite" width="200px">
+            </a>
+            <div class="description">Fortnite</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/GrandTheftAutoLogo.png">
+                <img src="bootcamp games-logo/GrandTheftAutoLogo.png" alt="grand theft auto" width="200px">
+            </a>
+            <div class="description">Grand Theft Auto</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/LeagueOfLegendsLogo.png">
+                <img src="bootcamp games-logo/LeagueOfLegendsLogo.png" alt="league of legends" width="200px">
+            </a>
+            <div class="description">League of Legends</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/PubGbattlegroundsLogo.png">
+                <img src="bootcamp games-logo/PubGbattlegroundsLogo.png" alt="pubg" width="200px">
+            </a>
+            <div class="description">PubG Battlegrounds</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/Valorantlogo.png">
+                <img src="bootcamp games-logo/Valorantlogo.png" alt="valorant" width="200px">
+            </a>
+            <div class="description">Valorant</div>
+        </div>
+
+    </div>
+</body>
+</html>
