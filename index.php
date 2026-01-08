@@ -3,7 +3,7 @@
 <head>
     <title>Bootcamp Gaming Zone</title>
     <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
-    <link rel="stylesheet" href="finalproject.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body style="background-color: grey;">
     <div class="main">
@@ -13,10 +13,10 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="finalproject.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="location.html">LOCATION</a></li>
-                    <li><a href="contact.html">CONTACT </a></li>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="lokacioni.php">LOCATION</a></li>
+                    <li><a href="contact.phpo">CONTACT </a></li>
                 </ul>
             </div>
 
@@ -40,17 +40,27 @@
                  also recive our latest news and discounts!
                  </p>
 
-                 <button class="cnt"><a href="#">LEARN MORE!</a></button>
+                 <a href="#" class="cnt">LEARN MORE!</a>
+
                  <br></br>
                  <br></br>
                  <br></br>
 
+                 <?php
+                 session_start();
+                 if (isset($_SESSION['error'])) { 
+                    echo "<p style='color:red'>" . $_SESSION['error'] . "</p>";
+                    unset($_SESSION['error'])}
+                 ?>
+
+
                  <div class="form">
                     <h2>Register Here</h2>
-                    <form method="POST" action="register.php">
-                     <input type="email" name="email" placeholder="Enter Email Here" required>
-                     <input type="password" name="password" placeholder="Enter Password Here" required>
-                      <button type="submit" class="bttn">Register</button>
+                    <form id="registerForm" method="POST" action="register.php">
+                     <input id="email" type="email" name="email" placeholder="Enter Email Here" required>
+                     <input id="password" type="password" name="password" placeholder="Enter Password Here" required>
+                     <span id="password-error"></span>
+                     <button type="submit" class="bttn">Register</button>
                     </form>
 
 
