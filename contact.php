@@ -1,120 +1,40 @@
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Gaming Zone</title>
+    <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body style="background-color: grey;">
 
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Bootcamp</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.php">ABOUT</a></li>
+                <li><a href="location.php">LOCATION</a></li>
+                <li><a href="contact.php">CONTACT </a></li>
+            </ul>
+        </div>
 
-.logo{
-    color: black;
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-}
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type here">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
+    </div>
+    
+    <h3>Below you will find our contact information!</h3>
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 20px;
-}
-
-ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    transition: 0,4s ease-in-out;
-}
-
-ul li a:hover{
-    color:white;
-}
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid black;
-    margin-top: 13px;
-    color: beige;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn{
-    width: 100px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid black;
-    margin-top: 13px;
-    color: white;
-    font-size: 16px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.btn:focus{
-    outline: none;
-}
-
-.srch:focus{
-    outline: none;
-}
-
-h3{
-    color: black;
-    font-family: 'Times New Roman';
-    text-align: left;
-    font-size: 30px;
-    text-decoration: none;
-    padding: 100px;
-}
-
-
-ol li{
-    list-style: circle;
-    font-size: 20px;
-}
-
-ol li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman';
-    transition: 0,4s ease-in-out;
-}
-
-ol li a:hover{
-    color: white;
-}
+    <ol>
+        <li><a href="https://mail.google.com/mail/u/1/#inbox">Email</a></li>
+        <li><a href="https://www.instagram.com/bootcamp_gaming/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/gentian.haxhimehmeti">Facebook</a></li>
+        <li><a href="#">Reservations: +38349173543</a></li>
+   </ol>
+</body>
+</html>

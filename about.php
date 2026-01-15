@@ -1,116 +1,104 @@
-.navbar{
-  width: 1200px;
-  height: 75px;
-  margin: auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Gaming Zone</title>
+    <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body style="background-color:grey;">
+    <div class="main">
+        
+        <div class="navbar"></div>
+            <div class="icon">
+                <h2 class="logo">Bootcamp</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="location.php">LOCATION</a></li>
+                    <li><a href="contact.php">CONTACT </a></li>
+                </ul>
+            </div>
 
-.icon{
-  width: 200px;
-  float: left;
-  height: 70px;
-}
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type here">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+        </div>
 
-.logo{
-  color: black;
-  font-size: 45px;
-  font-family: 'Times New Roman', Times, serif;
-  padding-left: 20px;
-  float: left;
-  padding-top: 10px;
-}
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+    
 
-.menu{
-  width: 400px;
-  float: left;
-  height: 70px;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/AgeOfEmpiresLogo.png">
+                <img src="bootcamp games-logo/AgeOfEmpiresLogo.png" alt="age of empires" width="200px">
+            </a>
+            <div class="description">Age of empires</div>
+        </div>
 
-ul{
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/ApexLegendsLogo.png">
+                <img src="bootcamp games-logo/ApexLegendsLogo.png" alt="apex legends" width="200px">
+            </a>
+            <div class="description">Apex Legends</div>
+        </div>
 
-ul li{
-  list-style: none;
-  margin-left: 62px;
-  margin-top: 27px;
-  font-size: 20px;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/CounterStrike2Logo.png">
+                <img src="bootcamp games-logo/CounterStrike2Logo.png" alt="counter strike 2" width="200px">
+            </a>
+            <div class="description">Counter Strike 2</div>
+        </div>
 
-ul li a{
-  text-decoration: none;
-  color: black;
-  font-family: 'Times New Roman';
-  font-weight: bold;
-  transition: 0,4s ease-in-out;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/Dota2Logo.png">
+                <img src="bootcamp games-logo/Dota2Logo.png" alt="dota 2" width="200px">
+            </a>
+            <div class="description">Dota 2</div>
+        </div>
 
-ul li a:hover{
-  color:white;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/FortniteLogo.jfif">
+                <img src="bootcamp games-logo/FortniteLogo.jfif" alt="fortnite" width="200px">
+            </a>
+            <div class="description">Fortnite</div>
+        </div>
 
-.search{
-  width: 330px;
-  float: left;
-  margin-left: 270px;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/GrandTheftAutoLogo.png">
+                <img src="bootcamp games-logo/GrandTheftAutoLogo.png" alt="grand theft auto" width="200px">
+            </a>
+            <div class="description">Grand Theft Auto</div>
+        </div>
 
-.srch{
-  font-family: 'Times New Roman';
-  width: 200px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid black;
-  margin-top: 13px;
-  color: beige;
-  border-right: none;
-  font-size: 16px;
-  float: left;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/LeagueOfLegendsLogo.png">
+                <img src="bootcamp games-logo/LeagueOfLegendsLogo.png" alt="league of legends" width="200px">
+            </a>
+            <div class="description">League of Legends</div>
+        </div>
 
-.btn{
-  width: 100px;
-  height: 40px;
-  background: transparent;
-  border: 2px solid black;
-  margin-top: 13px;
-  color: white;
-  font-size: 16px;
-  border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/PubGbattlegroundsLogo.png">
+                <img src="bootcamp games-logo/PubGbattlegroundsLogo.png" alt="pubg" width="200px">
+            </a>
+            <div class="description">PubG Battlegrounds</div>
+        </div>
 
-.btn:focus{
-  outline: none;
-}
+        <div class="gallery">
+            <a target="_blank" href="bootcamp games-logo/Valorantlogo.png">
+                <img src="bootcamp games-logo/Valorantlogo.png" alt="valorant" width="200px">
+            </a>
+            <div class="description">Valorant</div>
+        </div>
 
-.srch:focus{
-  outline: none;
-}
-
-div.gallery {
-  padding: 20px;
-  margin: 5px;
-  border: 1px solid #060606;
-  float: left;
-  width: 200px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: 150px;
-}
-
-div.description {
-  padding: 15px;
-  text-align: center;
-}
+    </div>
+</body>
+</html>

@@ -1,12 +1,20 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 require_once 'classes/User.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_POST['email']) && isset($_POST['password'])) {
+  echo "REGISTER.PHP RUNNING";
+  exit;
+
 
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
-
+   
     $emailPattern = "/^[^\s@]+@[^\s@]+\.[^\s@]+$/";
     $passwordPattern = "/^(?=.*\d)(?=.*[A-Z]).{8,}$/";
 
