@@ -16,7 +16,8 @@
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="about.php">ABOUT</a></li>
                     <li><a href="lokacioni.php">LOCATION</a></li>
-                    <li><a href="contact.phpo">CONTACT </a></li>
+                    <li><a href="contact.php">CONTACT </a></li>
+                    <li><a href="news.php">News</a></li>
                 </ul>
             </div>
 
@@ -50,11 +51,12 @@
                  session_start();
                  if (isset($_SESSION['error'])) { 
                     echo "<p style='color:red'>" . $_SESSION['error'] . "</p>";
-                    unset($_SESSION['error'])}
+                    unset($_SESSION['error']);
+                 }
                  ?>
 
 
-                 <div class="form">
+                <div class="form">
                     <h2>Register Here</h2>
                     <form id="registerForm" method="POST" action="register.php">
                      <input id="email" type="email" name="email" placeholder="Enter Email Here" required>
@@ -62,12 +64,20 @@
                      <span id="password-error"></span>
                      <button type="submit" class="bttn">Register</button>
                     </form>
+                </div>
 
+                  
+                <div class="link">
+                     <p class="alr">Already registered?<br>
+                     <h2>Login Here</h2>
 
-                    <p class="link">Already registered?<br>
-                    <button class="bttn2"><a href="#">Log in here</a></button></p>
+                    <form method="POST" action="login.php">
+                     <input type="email" name="email" placeholder="Enter Email Here" required>
+                     <input type="password" name="password" placeholder="Enter Password Here" required>
+                     <button type="submit" class="bttn2">Login</button>
+                    </form>
+                </div>
 
-                 </div>
         </div>
     </div>
 </body>
