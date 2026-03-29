@@ -1,3 +1,19 @@
+
+
+5 of 1,620
+updated files
+Inbox
+
+Erza Haxhimehmeti
+Attachments
+Mar 28, 2026, 10:26 PM (19 hours ago)
+to me
+
+Database.php , News.php edhe User.php jon te folder classes qe eshte mbrenda folderit bootcamp_project.
+Boni update qito files qe ti dergova tani i bojna commit n'GitHub do ti do une.
+Skom punu kurgjo ne FrontEnd (as me css sjom merr) veq n'back.
+ 14 Attachments
+  •  Scanned by Gmail
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp Gaming Zone</title>
     <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
-    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="lokacioni.css">
 </head>
 
 <body style="background-color: grey;">
@@ -17,10 +33,10 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="finalproject.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="location.html">LOCATION</a></li>
-                <li><a href="contact.html">CONTACT </a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="about.php">ABOUT</a></li>
+                <li><a href="lokacioni.php">LOCATION</a></li>
+                <li><a href="contact.php">CONTACT </a></li>
             </ul>
         </div>
 
