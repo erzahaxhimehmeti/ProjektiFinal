@@ -4,7 +4,10 @@ const passwordInput = document.getElementById('password');
 
 const passwordError = document.getElementById('password-error');
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 function validate(e) {
+    e.preventDefault();
 
     passwordError.textContent = '';
 
@@ -27,6 +30,7 @@ function validate(e) {
     }
 
     const passwordRegex = /^(?=.*\d)(?=.*[A-Z]).{8,}$/;
+
     if (!passwordRegex.test(passwordInput.value)) {
         passwordError.textContent =
             "Password must be at least 8 characters, include 1 uppercase letter and 1 number.";

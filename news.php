@@ -1,5 +1,6 @@
 <?php
 require_once 'classes/News.php';
+
 $news = new News();
 $allNews = $news->getAllNews();
 ?>

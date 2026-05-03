@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #020617, #020617 40%, #0b1120);
+    color: #e5e7eb;
+}
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.menu {
+    justify-self: center;
+}
+
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 18px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    color: #60a5fa;
+}
+
+
+.search {
+    display: flex;
+    gap: 8px;
+}
+
+.srch {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #1f2937;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+.btn {
+    padding: 6px 14px;
+    background: #2563eb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background:blue;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 10px 40px 20px;
+  margin-top: 0;
+}
+
+.gallery {
+
+  margin: 0;
+  padding: 12px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.gallery:hover {
+    transform: translateY(-3px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #e5e7eb;
+}
