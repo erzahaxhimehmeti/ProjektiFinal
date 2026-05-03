@@ -3,12 +3,12 @@ class Database {
     private $host = "localhost";
     private $db = "bootcamp_db";
     private $user = "root";
-    private $pass = "";
+    private $pass = "";                         
     protected $conn;
 
     public function __construct() {
         try {
-            $this->conn = new PDO(
+         $this->conn = new PDO(
                 "mysql:host={$this->host};dbname={$this->db}",
                 $this->user,
                 $this->pass

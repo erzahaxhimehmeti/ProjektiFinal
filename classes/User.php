@@ -24,7 +24,7 @@ class User extends Database {
         ]);
     } */
 
-    public function register($email, $password) {
+    /*public function register($email, $password) {
 
     echo "Inside register()<br>";
 
@@ -54,7 +54,27 @@ class User extends Database {
     }
 
     exit;
- }
+ } */
+
+    public function register($email, $password) {
+    try {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $sql = "INSERT INTO users (email, password, role, created)
+         VALUES (:email, :password, 'user', NOW())";
+        $stmt = $this->conn->prepare($sql);
+
+        return $stmt->execute([
+            ':email' => $email,
+            ':password' => $hashedPassword
+        ]);
+
+    } catch (PDOException $e) {
+        echo "DB ERROR: " . $e->getMessage();
+        exit;
+    }
+}
+
     
 
     public function login($email, $password) {

@@ -1,29 +1,17 @@
 <?php
 session_start();
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 require_once 'classes/User.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$email = $_POST['email'] ?? null;
+$password = $_POST['password'] ?? null;
 
-    $email = trim($_POST['email']);
-    $password = trim($_POST['password']);
+var_dump($email, $password);
 
-    $user = new User();
-    $loggedInUser = $user->login($email, $password);
+$user = new User();
+$result = $user->login($email, $password);
 
-    if (!$loggedInUser) {
-        $_SESSION['error'] = "Invalid email or password";
-        header("Location: index.php");
-        exit;
-    }
-
-    $_SESSION['user_id'] = $loggedInUser['id'];
-    $_SESSION['email'] = $loggedInUser['email'];
-    $_SESSION['role'] = $loggedInUser['role'];
-
-    if ($loggedInUser['role'] === 'admin') {
-        header("Location: dashboard.php");
-    } else {
-        header("Location: index.php");
-    }
-    exit;
-}
+var_dump($result);
+exit;
