@@ -37,5 +37,4 @@ function validate(e) {
 
     form.submit();
 }
-
 form.addEventListener('submit', validate);
