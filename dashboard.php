@@ -1,25 +1,10 @@
-<<<<<<< HEAD
-<?php
-require_once 'auth.php';
-requireAdmin();
-?>
-
-<h1>Admin Dashboard</h1>
-<p>Welcome, <?php echo $_SESSION['email']; ?></p>
-
-<ul>
-    <li><a href="add_news.php">Add News</a></li>
-    <li><a href="news.php">View News</a></li>
-    <li><a href="logout.php">Logout</a></li>
-</ul>
-=======
 <?php
 require_once 'auth.php';
 requireAdmin();
 require_once 'classes/News.php';
 
 $news = new News();
-$allNews = $news->getAllNews();
+$allNews = $news->getAllNews(); //news lexohen nga databaza
 ?>
 
 <h1>Admin Dashboard</h1>
@@ -39,4 +24,4 @@ $allNews = $news->getAllNews();
 
 <br>
 <a href="logout.php">Logout</a>
->>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
+

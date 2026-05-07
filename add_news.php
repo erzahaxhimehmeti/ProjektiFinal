@@ -7,6 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $content = $_POST['content'];
 
+    if (empty($title) || empty($content)) {
+        die("All fields are required.");   //e shtova qit kusht
+    }
+
     $news = new News();
     $news->addNews($title, $content, null, $_SESSION['user_id']);
 

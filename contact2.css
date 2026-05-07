@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -151,8 +150,8 @@ ol li {
         margin-left: 20px;
         margin-right: 20px;
     }
-}
-=======
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -165,14 +164,16 @@ body {
     color: #e5e7eb;
 }
 
+/* NAVBAR */
 
 .navbar {
     width: 100%;
     height: 80px;
     padding: 0 70px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
+    gap: 16px;
 }
 
 .logo {
@@ -181,20 +182,20 @@ body {
     color: #e5e7eb;
 }
 
+.menu {
+    justify-self: center;
+}
+
 .menu ul {
     display: flex;
     list-style: none;
-}
-
-.menu ul li {
-    margin: 0 18px;
+    gap: 20px;
 }
 
 .menu ul li a {
     text-decoration: none;
     color: #cbd5e1;
     font-size: 14px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -202,8 +203,10 @@ body {
     color: #60a5fa;
 }
 
+/* SEARCH */
 
 .search {
+    justify-self: end;
     display: flex;
     gap: 8px;
 }
@@ -225,41 +228,46 @@ body {
     cursor: pointer;
     color: #e5e7eb;
     font-size: 14px;
-    font-weight: 500;
     transition: 0.3s;
 }
 
 .btn:hover {
     background: #1d4ed8;
-    transform: translateY(-1px);
 }
 
-.btn:active {
-    transform: translateY(0);
-}
-
+/* CONTACT SECTION */
 
 h3 {
-    margin: 60px 70px 20px;
-    font-size: 26px;
-    font-weight: 500;
+    margin: 50px 70px 20px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
+/* LIST */
 
 ol {
     margin: 0 70px;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 ol li {
-    margin: 15px 0;
-    font-size: 18px;
+    list-style: none;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 18px;
+    border-radius: 10px;
+    width: fit-content;
 }
 
+/* LINKS */
 
 ol li a {
     text-decoration: none;
     color: #60a5fa;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     transition: 0.3s;
 }
 
@@ -267,11 +275,41 @@ ol li a:hover {
     color: #93c5fd;
 }
 
-ol li {
-    background: rgba(255, 255, 255, 0.02);
-    padding: 10px 15px;
-    border-radius: 8px;
-    width: fit-content;
-    backdrop-filter: blur(4px);
+/* ICONS */
+
+ol li a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
->>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
+
+/* RESPONSIVE */
+
+@media (max-width: 860px) {
+
+    .navbar {
+        height: auto;
+        padding: 16px 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .srch {
+        flex: 1;
+    }
+
+    h3,
+    ol {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+

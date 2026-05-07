@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 require_once 'Database.php';
 
 class News extends Database {
@@ -25,22 +24,3 @@ class News extends Database {
         return $this->conn->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
 }
-=======
-require_once 'classes/News.php';
-
-$news = new News();
-$allNews = $news->getAllNews();
-?>
-
-<h1>Latest News</h1>
-
-<?php foreach ($allNews as $item): ?>
-    <div>
-        <h3><?= htmlspecialchars($item['title']) ?></h3>
-        <p><?= htmlspecialchars($item['content']) ?></p>
-        <small>
-            Added by: <?= htmlspecialchars($item['email']) ?>
-        </small>
-    </div>
-<?php endforeach; ?>
->>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
