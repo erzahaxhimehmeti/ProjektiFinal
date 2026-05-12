@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,92 +84,19 @@
                 </div>
 
         </div>
+
+     <div class="slider">
+      <img id="slide" src="images/slide1.jpg" alt="Gaming Slide">
+
+     <div class="slider-buttons">
+        <button onclick="prevSlide()">Prev</button>
+        <button onclick="nextSlide()">Next</button>
+     </div>
+
     </div>
-</body>
-=======
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootcamp Gaming Zone</title>
-    <link rel="icon" type="image/x-icon" href="bootcamp foto/b1.jpg">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body style="background-color: grey;">
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Bootcamp</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="about.php">ABOUT</a></li>
-                    <li><a href="lokacioni.php">LOCATION</a></li>
-                    <li><a href="contact.php">CONTACT </a></li>
-                    <li><a href="news.php">News</a></li>
-                </ul>
-            </div>
-
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type here">
-                <a href="#"> <button class="btn">Search</button></a>
-            </div>
-        </div>
-        <div class="content">
-            <h1>Welcome To The <br><span>Gaming Zone</span><br></h1> 
-            <p class="prg">Bootcamp Gaming Zone is a safe place developed <br>
-                 in March 2024 for gamers to express their talent and <br>
-                 conect with other gamers all around the world,<br>
-                 this made possible by our high tech devices.<br>
-                 You can also play and have fun with your friends as a group!<br>
-                 
-                 <br></br>
-                 <br></br>
-                 If you would like to become a part of our gamers community,<br>
-                 you can register by filling out our form, this way you will <br>
-                 also recive our latest news and discounts!
-                 </p>
-
-                 <a href="#" class="cnt">LEARN MORE!</a>
-
-                 <br></br>
-                 <br></br>
-                 <br></br>
-
-                 <?php
-                 session_start();
-                 if (isset($_SESSION['error'])) { 
-                    echo "<p style='color:red'>" . $_SESSION['error'] . "</p>";
-                    unset($_SESSION['error']);
-                 }
-                 ?>
-
-
-                <div class="form">
-                    <h2>Register Here</h2>
-                    <form id="registerForm" method="POST" action="register.php">
-                     <input id="email" type="email" name="email" placeholder="Enter Email Here" required>
-                     <input id="password" type="password" name="password" placeholder="Enter Password Here" required>
-                     <span id="password-error"></span>
-                     <button type="submit" class="bttn">Register</button>
-                    </form>
-                </div>
-
-                  
-                <div class="link">
-                     <p class="alr">Already registered?<br>
-                     <h2>Login Here</h2>
-
-                    <form method="POST" action="login.php">
-                     <input type="email" name="email" placeholder="Enter Email Here" required>
-                     <input type="password" name="password" placeholder="Enter Password Here" required>
-                     <button type="submit" class="bttn2">Login</button>
-                    </form>
-                </div>
-
-        </div>
     </div>
+
+<script src="slider.js"></script>
+
 </body>
->>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
 </html>

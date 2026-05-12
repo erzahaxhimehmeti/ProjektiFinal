@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 * {
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
+/** {
+>>>>>>> 21a1634fc42156ea19bb4e7cf16a7fe1287afb45
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -112,3 +120,169 @@ ol li a:hover {
     color: #60a5fa;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 66850989a5c0d6a826f44136005196a2ecf71d85
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #020617, #020617 40%, #0b1120);
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.menu {
+    justify-self: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #60a5fa;
+}
+
+/* SEARCH */
+
+.search {
+    justify-self: end;
+    display: flex;
+    gap: 8px;
+}
+
+.srch {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #1f2937;
+    background: #020617;
+    color: #e5e7eb;
+    outline: none;
+}
+
+.btn {
+    padding: 6px 14px;
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #e5e7eb;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* CONTACT SECTION */
+
+h3 {
+    margin: 50px 70px 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* LIST */
+
+ol {
+    margin: 0 70px;
+    padding-left: 0;
+}
+
+ol li {
+    list-style: none;
+    margin-bottom: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 18px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* LINKS */
+
+ol li a {
+    text-decoration: none;
+    color: #60a5fa;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+ol li a:hover {
+    color: #93c5fd;
+}
+
+/* ICONS */
+
+ol li a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 860px) {
+
+    .navbar {
+        height: auto;
+        padding: 16px 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .srch {
+        flex: 1;
+    }
+
+    h3,
+    ol {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+>>>>>>> 21a1634fc42156ea19bb4e7cf16a7fe1287afb45
